@@ -9,7 +9,7 @@ export const ImageSelector = ({image, setImage}) => {
     useEffect(() => {
         (async () => {
             if (Platform.OS !== 'web') {
-                const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
+                const { status } = await ImagePicker.getCameraPermissionsAsync();
                 if (status !== 'granted') {
                     alert('Sorry, we need camera roll permissions to make this work!');
                 }
