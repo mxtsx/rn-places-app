@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Great Places",
+    "slug": "great-places",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/splash.png",
+    "platforms": ["android", "ios"],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#171717"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mxtsxdev.great-places",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.mxtsxdev.great_places",
+      "versionCode": 1,
+      "permissions": ["CAMERA", "WRITE_EXTERNAL_STORAGE", "READ_EXTERNAL_STORAGE"]
+    },
+    "web": {
+      "favicon": "./assets/splash.png"
+    }
+  }
+}
